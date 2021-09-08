@@ -1,0 +1,72 @@
+footer{
+    background: rgb(31, 30, 30);
+    min-height: auto;
+    padding: 1em;
+}
+footer .cols{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap:1em;
+}
+.col-span-2{
+    grid-column: span 1/ span 1;
+}
+footer .cols div{
+    padding: 1em;
+}
+footer .cols div h5{
+    color: white;
+    font-size: 1.7em;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1em;
+}
+footer .cols div p{
+    color: rgb(182, 181, 181);
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+footer .cols div ul{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    line-height: 2.2em;
+}
+footer .cols div ul li a{
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    font-size: 17px;
+}
+footer .copy{
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(199, 199, 199);
+    margin-top: 2em;
+}
+@media (min-width:576px) {
+    .col-span-2{
+        grid-column: span 1/ span 1;
+    }
+    footer{
+        padding: 2em;
+    }
+    footer .cols{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (min-width:768px) {
+    .col-span-2{
+        grid-column: span 1/ span 1;
+    }
+    footer .cols{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (min-width:992px) {
+    footer .cols{
+        grid-template-columns: repeat(5,minmax(0,1fr));
+    }
+}

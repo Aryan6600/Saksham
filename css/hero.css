@@ -1,0 +1,88 @@
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/2k.jpg');   
+    background-size: cover;
+    background-position: center;
+}
+.hero .hero-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    max-width: 1200px;
+}
+.hero .hero-content .left{
+    width: 100%;
+    color: var(--theme-color-1);
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+.hero .hero-content .left .title{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    transition: 0.5s;
+}
+.hero .hero-content .left .subtitle{
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+.hero .hero-content .left .text{
+    line-height: 26px;
+    font-size: 17px;
+    margin-bottom: 1em;
+    transition: 0.5s;
+}
+.hero .hero-content .left .btn{
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--theme-color-1);
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    color: var(--theme-color-1);
+    transition: 0.3s;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.hero .hero-content .left .btn:hover{
+    background-color: var(--theme-color-1);
+    color: white;
+}
+.hero .hero-content .right{
+    width: 100%;
+}
+.hero .hero-content .right img{
+    width: 100%;
+    clip-path: polygon(32% 0%, 100% 100%, 0% 100%);
+}
+@media (min-width:992px) {
+    .hero{
+        background: linear-gradient(120deg,white,white 60%,transparent 40%),url('../images/2k.jpg');   
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero .hero-content{
+        flex-direction: row;
+    }
+    .hero .hero-content .left{
+        width: 60%;
+        text-align: start;
+    }
+    .hero .hero-content .right{
+        width: 40%;
+    }
+    .hero .hero-content .left .btn{
+        margin: 0;
+    }
+}
