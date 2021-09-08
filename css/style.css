@@ -42,8 +42,8 @@
 .navbar .bg-light{
     background: transparent !important;
 }
-.btn-outline-light.hover-text-blue:hover{
-    color: blue !important;
+.btn-outline-light.hover-text-green:hover{
+    color: green !important;
 }
 .scroll{
     display: flex;
