@@ -1,5 +1,5 @@
 .custom-crousel{
-    height: 89.2vh;
+    height: 90vh;
     background: linear-gradient(40deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/bag 1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -36,9 +36,9 @@
     text-align: center;
     color: rgb(3, 128, 32) !important;
 }
-.btn{
+/* .btn{
     padding: 10px 25px !important;
-}
+} */
 .navbar .bg-light{
     background: transparent !important;
 }
@@ -57,9 +57,49 @@
 .scroll .scroll-content{
     padding: 10px;
     min-width: 22em;
+    position: relative;
+}
+.scroll .scroll-content::before{
+    content: '';
+    background: url('../images/leaf.png');
+    background-size: contain;
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+}
+.scroll .scroll-content::after{
+    content: '';
+    background: url('../images/leaf.png');
+    background-size: contain;
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    z-index: 1;
 }
 #preloader{
     height: 100vh;
     align-items: center;
     justify-self: center;
+}
+.leaf{
+    position: relative;
+}
+.leaf::before{
+    content: '';
+    background: url('../images/leaf.png');
+    background-size: contain;
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    top:0;
+    right:-15%;
+    z-index: 1;
+}
+.navbar-shadow{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
 }
