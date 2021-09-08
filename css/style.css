@@ -1,6 +1,7 @@
 .custom-crousel{
     height: 90vh;
-    background: linear-gradient(40deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/bag 1.jpg');
+    background: rgb(17,121,9);
+    background: linear-gradient(360deg, rgba(17,121,9,0.6) 23%, rgba(0,138,255,0.8) 100%),url('../images/bag 1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
