@@ -1,0 +1,36 @@
+.categories{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+}
+.categories .categorie{
+    padding: 10px;
+    position: relative;
+}
+.categories .categorie .cat{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://5.imimg.com/data5/TY/PA/UU/SELLER-18377181/navy-blue-u-cut-non-woven-bag-500x500.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.categories .categorie .cat:hover{
+    transform: translateY(-10px);
+}
+@media (min-width:992px) {
+    .categories{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        transform: translateY(-5em);
+    }
+}

@@ -1,0 +1,38 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    background-color: transparent;
+}
+.products .product{
+    padding: 10px;
+}
+.products .product .card{
+    padding: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.products .product .card:hover{
+    transform: scale(0.9);
+}
+.products .product .card img{
+    width: 100%;
+    height: auto;
+}
+.products .product .card .card-content{
+    padding: 15px;
+    color: black;
+}
+.products .product .card .card-content .title{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.products .product .card .card-content .btn{
+    padding: 10px 25px;
+    background-color: rgb(19, 109, 194);
+    color: white;
+    display: block;
+    width: max-content;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 10px;
+}
