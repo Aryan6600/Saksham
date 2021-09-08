@@ -66,6 +66,9 @@ footer .copy{
     }
 }
 @media (min-width:992px) {
+    .col-span-2{
+        grid-column: span 2/ span 2;
+    }
     footer .cols{
         grid-template-columns: repeat(5,minmax(0,1fr));
     }

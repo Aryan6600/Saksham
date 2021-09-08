@@ -91,12 +91,9 @@ section.h-auto{
     font-weight: normal;
     margin-bottom: 10px;
 }
-.contact-card p{
-    line-height: 25px;
-}
 .contact-card .btn{
     padding: 10px 20px;
-    display: block;
+    display: flex;
     border: 1px solid white;
     width: max-content;
     text-decoration: none;
@@ -104,6 +101,11 @@ section.h-auto{
     border-radius: 50px;
     margin-top: 10px;
     transition: 0.3s;
+    align-items: center;
+    justify-self: center;
+}
+.contact-card .btn ion-icon{
+    font-size: 1.5em;
 }
 .contact-card .btn:hover{
     background-color: white;
@@ -136,7 +138,16 @@ section.h-auto{
         opacity: 0;
     }
 }
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 @media (min-width:768px) {
+    .space-between{
+        flex-direction: row;
+    }
     .cols-2{
         grid-template-columns: repeat(2,minmax(0,1fr));
     }

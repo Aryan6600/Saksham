@@ -1,0 +1,23 @@
+.scroller{
+    display: flex;
+    overflow-x: auto;
+}
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller .scnt{
+    min-width: 360px;
+    padding: 10px;
+    cursor: pointer;
+}
+.scroller .scnt .card{
+    transition: 0.5s;
+}
+.scroller .scnt:hover .card{
+    transform: scale(0.9);
+}
+@media (min-width:992px) {
+    .scroller .scnt{
+        min-width: 455px;
+    }
+}
