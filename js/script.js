@@ -21,3 +21,5 @@ modalTogglers.forEach((toggler) => {
         document.getElementById(target).classList.toggle("active");
     });
 });
+
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));

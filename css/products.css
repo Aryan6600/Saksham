@@ -1,6 +1,6 @@
 .products{
     display: grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-columns: repeat(1,minmax(0,1fr));
     background-color: transparent;
 }
 .products .product{
@@ -10,6 +10,9 @@
     padding: 0;
     transition: 0.3s;
     cursor: pointer;
+}
+.products .product .card .title{
+    font-size: 1.2em !important;
 }
 .products .product .card:hover{
     transform: scale(0.9);
@@ -21,6 +24,17 @@
 .products .product .card .card-content{
     padding: 15px;
     color: black;
+}
+.products .product .card .card-content.canter{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.products .product .card .card-content ion-icon{
+    font-size: 4em;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
 }
 .products .product .card .card-content .title{
     font-weight: normal;
@@ -35,4 +49,25 @@
     border-radius: 3px;
     text-decoration: none;
     margin-top: 10px;
+}
+@media (min-width:546px) {
+    .products{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (min-width:768px) {
+    .products{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .container{
+        max-width: 768px;
+    }
+}
+@media (min-width:992px) {
+    .products{
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+    .container{
+        max-width: 1200px;
+    }
 }

@@ -5,10 +5,17 @@
 }
 .categories .categorie{
     padding: 10px;
-    position: relative;
 }
+.categories .categorie .cat.one{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://5.imimg.com/data5/RD/NN/HG/SELLER-37458601/blue-plain-non-woven-u-cut-bags-250x250.jpg');
+}
+.categories .categorie .cat.two{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://5.imimg.com/data5/YD/ZI/DW/SELLER-37458601/non-woven-bag-250x250.jpg');
+}
+.categories .categorie .cat.three{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://5.imimg.com/data5/JM/EV/LK/SELLER-37458601/non-woven-w-cut-bag-250x250.jpg');
+} 
 .categories .categorie .cat{
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://5.imimg.com/data5/TY/PA/UU/SELLER-18377181/navy-blue-u-cut-non-woven-bag-500x500.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +31,7 @@
     color: white;
     cursor: pointer;
     transition: 0.3s;
-}
+}  
 .categories .categorie .cat:hover{
     transform: translateY(-10px);
 }
