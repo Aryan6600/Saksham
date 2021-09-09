@@ -1,6 +1,7 @@
 const preloader = document.getElementById("preloader")
 const content = document.getElementById("main-content")
 const links = document.querySelectorAll('.link')
+const nav = document.getElementById('nav')
 
 links.forEach(link => {
     link.addEventListener("click",() => {
@@ -30,3 +31,11 @@ modalTogglers.forEach((toggler) => {
     });
 });
 
+window.addEventListener('click',event => {
+    if(event.target.id !== "bgr"){
+        nav.classList.remove('active')
+    }
+}) 
+window.onscroll(function(){
+    nav.classList.remove('active')
+}) 
