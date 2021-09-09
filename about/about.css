@@ -1,0 +1,45 @@
+.about-title{
+    text-align: start;
+    font-weight: 500;
+    color: gray;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about-text{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.about-table{
+    border: 1px solid gray;
+}
+.about-details{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-detail{
+    padding: 5px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.detail:hover{
+    transform: scale(0.95);
+}
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('../images/sweet\ box.jpg');   
+    background-size: cover;
+    background-position: center;
+}

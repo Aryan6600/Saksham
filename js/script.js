@@ -1,5 +1,13 @@
 const preloader = document.getElementById("preloader")
 const content = document.getElementById("main-content")
+const links = document.querySelectorAll('.link')
+
+links.forEach(link => {
+    link.addEventListener("click",() => {
+        const target = link.getAttribute("data-redirect")
+        window.open(target, '_blank').focus();
+    })
+})
 
 window.onload = () => {
     preloader.style.display = "none";
@@ -22,4 +30,3 @@ modalTogglers.forEach((toggler) => {
     });
 });
 
-mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
