@@ -39,7 +39,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('../images/sweet\ box.jpg');   
+    background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url('../images/sweet\ boxes\ 2.jpg');   
     background-size: cover;
     background-position: center;
+}
+.hero-content .left .text{
+    line-height: 26px;
+}
+.visual-details{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 1em;
+    margin: 2em 0;
+}
+.visual-details .visual-detail{
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+.visual-details .visual-detail ion-icon{
+    padding: 10px;
+    font-size: 1.3em;
+}
+.visual-details .visual-detail .col{
+    display: flex;
+    flex-direction: column;
+}
+.visual-details .visual-detail .col b{
+    color: gray;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+@media (min-width:576px) {
+    .visual-details{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (min-width:768px) {
+    .visual-details{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+@media (min-width:992px) {
+    .visual-details{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
 }

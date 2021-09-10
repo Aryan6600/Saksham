@@ -1,0 +1,32 @@
+.form{
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 10px;
+    min-height: 100vh;
+}
+.form .row{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 1em;
+    padding: 10px 0;
+}
+.form .form-control{
+    padding: 5px 10px;
+    line-height: 30px;
+    outline: none;
+    border: 2px solid lightgray;
+    width: 100%;
+    resize: none;
+    transition: 0.5s;
+}
+.form .form-control:focus{
+    border: 2px solid rgb(2, 150, 59);
+}
+@media (min-width:768px) {
+    .form .row{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        padding: 15px 0;
+    }
+}

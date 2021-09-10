@@ -9,9 +9,14 @@
     min-width: 360px;
     padding: 10px;
     cursor: pointer;
+    height: 100%;
 }
 .scroller .scnt .card{
     transition: 0.5s;
+    height: 100%;
+}
+.scroller .scnt .card .stars{
+    margin-top: 10px;
 }
 .scroller .scnt:hover .card{
     transform: scale(0.9);

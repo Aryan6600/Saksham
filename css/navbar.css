@@ -13,8 +13,14 @@ header{
     transition: all 0.5s;
     z-index: 100;
     position: fixed;
-    top: 0;
+    top: -21%;
     left: 0;
+    animation: navanime 0.7s ease-in 1 forwards;
+}
+@keyframes navanime {
+    to{
+        top: 0%;
+    }
 }
 .navbar-brand{
     font-size: 20px;
