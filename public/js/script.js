@@ -46,7 +46,6 @@ const rippleButtons = document.querySelectorAll('.ripple')
 
 rippleButtons.forEach(btn => {
     btn.addEventListener('click',e => {
-        console.log('clicked')
         let ripple = document.createElement('span')
         ripple.classList.add('ripple-component')
         ripple.style.top = 50 + '%';
@@ -55,3 +54,6 @@ rippleButtons.forEach(btn => {
         setTimeout(()=>{ripple.remove()},300)
     })
 })
+
+
+

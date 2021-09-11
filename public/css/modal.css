@@ -1,0 +1,57 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 101;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: none;
+}
+.modal.active{
+    display: flex;
+}
+.modal .modal-content{
+    width: 100%;
+    background-color: white;
+}
+.modal .modal-content .modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.modal .modal-content .modal-header h2{
+    font-weight: normal;
+}
+.modal .modal-content .modal-header ion-icon{
+    font-size: 2em;
+    cursor: pointer;
+}
+.modal .modal-content .modal-items{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal .modal-content .modal-items input[type="text"],textarea{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+}
+.modal .modal-content .modal-items a{
+    width: max-content;
+    display: block;
+    background-color: rgb(11, 68, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
