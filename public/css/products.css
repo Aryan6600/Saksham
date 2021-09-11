@@ -1,6 +1,4 @@
-.hero{
-    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)) ,url('../images/file-20200407-18916-1p3qplf.jpg');   
-}
+
 .products{
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
