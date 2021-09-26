@@ -57,3 +57,15 @@ rippleButtons.forEach(btn => {
 
 
 
+const stars = document.querySelectorAll('.star')
+stars.forEach(star => {
+    star.addEventListener('click',() => {
+        if(star.getAttribute('name') == "star-outline"){
+            star.setAttribute('name','star')
+            star.style.color = "green"
+        }else{
+            star.setAttribute('name','star-outline')
+            star.style.color = "black"
+        }
+    })
+})

@@ -2,7 +2,6 @@
     --theme-color-3:#66FFCC;
     --theme-color-2:#FF0066;
     --theme-color-1:#008f30;
-    /* --theme-color-1:#4989ff; */
 }
 ::-webkit-scrollbar{
     width: 0px;
@@ -128,6 +127,19 @@ section.h-auto{
     border-radius: 50px;
     z-index: 1;
     animation: pulse 1s linear infinite;
+}
+.more{
+    padding: 15px 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    background-color: rgb(7, 84, 228);
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+    margin-top: 1em;
+    font-size: large;
 }
 @keyframes pulse {
     from{
